@@ -1,0 +1,16 @@
+debug/login.o
+debug/main.o
+debug/editpoem.o
+debug/landingpage.o
+debug/mainwindow.o
+debug/readpoem.o
+debug/register.o
+debug/writepoem.o
+debug/qrc_Resources.o
+debug/moc_editpoem.o
+debug/moc_landingpage.o
+debug/moc_login.o
+debug/moc_mainwindow.o
+debug/moc_readpoem.o
+debug/moc_register.o
+debug/moc_writepoem.o

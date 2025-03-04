@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/bgimghome">
+        <file>Background.jpg</file>
+    </qresource>
+</RCC>

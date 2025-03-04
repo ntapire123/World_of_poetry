@@ -1,0 +1,16 @@
+release/login.o
+release/main.o
+release/editpoem.o
+release/landingpage.o
+release/mainwindow.o
+release/readpoem.o
+release/register.o
+release/writepoem.o
+release/qrc_Resources.o
+release/moc_editpoem.o
+release/moc_landingpage.o
+release/moc_login.o
+release/moc_mainwindow.o
+release/moc_readpoem.o
+release/moc_register.o
+release/moc_writepoem.o

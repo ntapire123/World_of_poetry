@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>images/Background.jpg</file>
+        <file>images/Country Birds Grayscale Coloring Book for Adults_.jpeg</file>
+        <file>images/editbooks.jpeg</file>
+        <file>images/Old Book Cover Paper Pages Textures Texture Antique Background Photo And Picture For Free Download - Pngtree.jpeg</file>
+        <file>images/read books.jpeg</file>
+        <file>images/writebooks.jpeg</file>
+    </qresource>
+</RCC>
