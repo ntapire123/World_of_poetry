@@ -6,12 +6,18 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>350</height>
+    <width>601</width>
+    <height>575</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>World of Poetry - Register</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+ color: rgb(0, 32, 63);
+
+background-image: url(:/img/images/Old Book Cover Paper Pages Textures Texture Antique Background Photo And Picture For Free Download - Pngtree.jpeg);</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -26,14 +32,14 @@
       <string>Create New Account</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
    </item>
    <item>
     <spacer name="verticalSpacer">
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
@@ -85,7 +91,7 @@
      <item row="3" column="1">
       <widget class="QLineEdit" name="lineEdit_password">
        <property name="echoMode">
-        <enum>QLineEdit::Password</enum>
+        <enum>QLineEdit::EchoMode::Password</enum>
        </property>
       </widget>
      </item>
@@ -99,7 +105,7 @@
      <item row="4" column="1">
       <widget class="QLineEdit" name="lineEdit_confirmPassword">
        <property name="echoMode">
-        <enum>QLineEdit::Password</enum>
+        <enum>QLineEdit::EchoMode::Password</enum>
        </property>
       </widget>
      </item>
@@ -108,7 +114,7 @@
    <item>
     <spacer name="verticalSpacer_2">
      <property name="orientation">
-      <enum>Qt::Vertical</enum>
+      <enum>Qt::Orientation::Vertical</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>

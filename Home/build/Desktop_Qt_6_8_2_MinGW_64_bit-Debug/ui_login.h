@@ -19,6 +19,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -28,6 +29,7 @@ public:
     QVBoxLayout *verticalLayout;
     QLabel *label_title;
     QSpacerItem *verticalSpacer;
+    QWidget *widget;
     QFormLayout *formLayout;
     QLabel *label_username;
     QLineEdit *lineEdit_username;
@@ -43,17 +45,28 @@ public:
         if (login->objectName().isEmpty())
             login->setObjectName("login");
         login->resize(400, 300);
-        login->setStyleSheet(QString::fromUtf8("Qwidget qlabel{\n"
-"color:balck\n"
-"}"));
+        login->setStyleSheet(QString::fromUtf8("\n"
+" color: rgb(0, 32, 63);\n"
+"\n"
+"background-image: url(:/img/images/Old Book Cover Paper Pages Textures Texture Antique Background Photo And Picture For Free Download - Pngtree.jpeg);\n"
+"\n"
+"  font-family: \"Moon Dance\", cursive;\n"
+"  font-weight: 400;\n"
+"  font-style: normal;\n"
+""));
         verticalLayout = new QVBoxLayout(login);
         verticalLayout->setObjectName("verticalLayout");
         label_title = new QLabel(login);
         label_title->setObjectName("label_title");
         QFont font;
+        font.setFamilies({QString::fromUtf8("Moon Dance")});
         font.setPointSize(16);
-        font.setBold(true);
+        font.setBold(false);
+        font.setItalic(false);
         label_title->setFont(font);
+        label_title->setStyleSheet(QString::fromUtf8("background-color: rgb(173, 239, 209);\n"
+" color: rgb(0, 32, 63);\n"
+""));
         label_title->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         verticalLayout->addWidget(label_title);
@@ -62,31 +75,36 @@ public:
 
         verticalLayout->addItem(verticalSpacer);
 
-        formLayout = new QFormLayout();
+        widget = new QWidget(login);
+        widget->setObjectName("widget");
+        widget->setStyleSheet(QString::fromUtf8(" font-family: \"Moon Dance\", cursive;\n"
+"  font-weight: 400;\n"
+"  font-style: normal;"));
+        formLayout = new QFormLayout(widget);
         formLayout->setObjectName("formLayout");
-        label_username = new QLabel(login);
+        label_username = new QLabel(widget);
         label_username->setObjectName("label_username");
 
         formLayout->setWidget(0, QFormLayout::LabelRole, label_username);
 
-        lineEdit_username = new QLineEdit(login);
+        lineEdit_username = new QLineEdit(widget);
         lineEdit_username->setObjectName("lineEdit_username");
 
         formLayout->setWidget(0, QFormLayout::FieldRole, lineEdit_username);
 
-        label_password = new QLabel(login);
+        label_password = new QLabel(widget);
         label_password->setObjectName("label_password");
 
         formLayout->setWidget(1, QFormLayout::LabelRole, label_password);
 
-        lineEdit_password = new QLineEdit(login);
+        lineEdit_password = new QLineEdit(widget);
         lineEdit_password->setObjectName("lineEdit_password");
         lineEdit_password->setEchoMode(QLineEdit::EchoMode::Password);
 
         formLayout->setWidget(1, QFormLayout::FieldRole, lineEdit_password);
 
 
-        verticalLayout->addLayout(formLayout);
+        verticalLayout->addWidget(widget);
 
         verticalSpacer_2 = new QSpacerItem(20, 20, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
 

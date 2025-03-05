@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
     // Initialize database
     if (!DbManager::initializeDatabase()) {
         return -1;
+
     }
     
     // Create and show login window instead of MainWindow

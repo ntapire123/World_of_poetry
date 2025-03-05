@@ -49,6 +49,10 @@ public:
         if (Register->objectName().isEmpty())
             Register->setObjectName("Register");
         Register->resize(400, 350);
+        Register->setStyleSheet(QString::fromUtf8("\n"
+" color: rgb(0, 32, 63);\n"
+"\n"
+"background-image: url(:/img/images/Old Book Cover Paper Pages Textures Texture Antique Background Photo And Picture For Free Download - Pngtree.jpeg);"));
         verticalLayout = new QVBoxLayout(Register);
         verticalLayout->setObjectName("verticalLayout");
         label_title = new QLabel(Register);
@@ -57,7 +61,7 @@ public:
         font.setPointSize(16);
         font.setBold(true);
         label_title->setFont(font);
-        label_title->setAlignment(Qt::AlignCenter);
+        label_title->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         verticalLayout->addWidget(label_title);
 
@@ -104,7 +108,7 @@ public:
 
         lineEdit_password = new QLineEdit(Register);
         lineEdit_password->setObjectName("lineEdit_password");
-        lineEdit_password->setEchoMode(QLineEdit::Password);
+        lineEdit_password->setEchoMode(QLineEdit::EchoMode::Password);
 
         formLayout->setWidget(3, QFormLayout::FieldRole, lineEdit_password);
 
@@ -115,7 +119,7 @@ public:
 
         lineEdit_confirmPassword = new QLineEdit(Register);
         lineEdit_confirmPassword->setObjectName("lineEdit_confirmPassword");
-        lineEdit_confirmPassword->setEchoMode(QLineEdit::Password);
+        lineEdit_confirmPassword->setEchoMode(QLineEdit::EchoMode::Password);
 
         formLayout->setWidget(4, QFormLayout::FieldRole, lineEdit_confirmPassword);
 

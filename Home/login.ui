@@ -14,18 +14,31 @@
    <string>World of Poetry - Login</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">Qwidget qlabel{
-color:balck
-}</string>
+   <string notr="true">
+ color: rgb(0, 32, 63);
+
+background-image: url(:/img/images/Old Book Cover Paper Pages Textures Texture Antique Background Photo And Picture For Free Download - Pngtree.jpeg);
+
+  font-family: &quot;Moon Dance&quot;, cursive;
+  font-weight: 400;
+  font-style: normal;
+</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="label_title">
      <property name="font">
       <font>
+       <family>Moon Dance</family>
        <pointsize>16</pointsize>
-       <bold>true</bold>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(173, 239, 209);
+ color: rgb(0, 32, 63);
+</string>
      </property>
      <property name="text">
       <string>Welcome to World of Poetry</string>
@@ -49,32 +62,39 @@ color:balck
     </spacer>
    </item>
    <item>
-    <layout class="QFormLayout" name="formLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_username">
-       <property name="text">
-        <string>Username:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="lineEdit_username"/>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_password">
-       <property name="text">
-        <string>Password:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="lineEdit_password">
-       <property name="echoMode">
-        <enum>QLineEdit::EchoMode::Password</enum>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true"> font-family: &quot;Moon Dance&quot;, cursive;
+  font-weight: 400;
+  font-style: normal;</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_username">
+        <property name="text">
+         <string>Username:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_username"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_password">
+        <property name="text">
+         <string>Password:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_password">
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </item>
    <item>
     <spacer name="verticalSpacer_2">

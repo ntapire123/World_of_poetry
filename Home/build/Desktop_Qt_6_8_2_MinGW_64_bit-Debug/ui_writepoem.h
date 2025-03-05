@@ -45,6 +45,11 @@ public:
         if (WritePoem->objectName().isEmpty())
             WritePoem->setObjectName("WritePoem");
         WritePoem->resize(600, 500);
+        WritePoem->setStyleSheet(QString::fromUtf8("\n"
+" color: rgb(0, 32, 63);\n"
+"\n"
+"\n"
+"background-image: url(:/img/images/Background.jpg);"));
         verticalLayout = new QVBoxLayout(WritePoem);
         verticalLayout->setObjectName("verticalLayout");
         label_title = new QLabel(WritePoem);
@@ -53,7 +58,7 @@ public:
         font.setPointSize(16);
         font.setBold(true);
         label_title->setFont(font);
-        label_title->setAlignment(Qt::AlignCenter);
+        label_title->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         verticalLayout->addWidget(label_title);
 
@@ -83,6 +88,9 @@ public:
         comboBox_category->addItem(QString());
         comboBox_category->addItem(QString());
         comboBox_category->setObjectName("comboBox_category");
+        comboBox_category->setStyleSheet(QString::fromUtf8("\n"
+" color: rgb(0, 32, 63);\n"
+"background-color: rgb(230, 222, 204);"));
 
         formLayout->setWidget(1, QFormLayout::FieldRole, comboBox_category);
 

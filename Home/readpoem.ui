@@ -6,12 +6,17 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
-    <height>500</height>
+    <width>819</width>
+    <height>582</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>World of Poetry - Read Poems</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+ color: rgb(0, 32, 63);
+background-image: url(:/img/images/Country Birds Grayscale Coloring Book for Adults_.jpeg);</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -26,7 +31,7 @@
       <string>Poetry Feed</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
    </item>
@@ -41,6 +46,9 @@
      </item>
      <item>
       <widget class="QComboBox" name="comboBox_filter">
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255)</string>
+       </property>
        <item>
         <property name="text">
          <string>All</string>
@@ -67,6 +75,9 @@
       <widget class="QComboBox" name="comboBox_category">
        <property name="enabled">
         <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255,255);</string>
        </property>
        <item>
         <property name="text">
@@ -108,7 +119,7 @@
      <item>
       <spacer name="horizontalSpacer">
        <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+        <enum>Qt::Orientation::Horizontal</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -128,7 +139,12 @@
     </layout>
    </item>
    <item>
-    <widget class="QListWidget" name="listWidget_poems"/>
+    <widget class="QListWidget" name="listWidget_poems">
+     <property name="styleSheet">
+      <string notr="true">color:rgb(255, 255, 255);
+background-image: url(:/img/images/Country Birds Grayscale Coloring Book for Adults_.jpeg);</string>
+     </property>
+    </widget>
    </item>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -142,7 +158,7 @@
      <item>
       <spacer name="horizontalSpacer_2">
        <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+        <enum>Qt::Orientation::Horizontal</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>

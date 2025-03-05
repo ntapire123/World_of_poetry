@@ -44,6 +44,9 @@ public:
         if (ReadPoems->objectName().isEmpty())
             ReadPoems->setObjectName("ReadPoems");
         ReadPoems->resize(700, 500);
+        ReadPoems->setStyleSheet(QString::fromUtf8("\n"
+" color: rgb(0, 32, 63);\n"
+"background-image: url(:/img/images/Country Birds Grayscale Coloring Book for Adults_.jpeg);"));
         verticalLayout = new QVBoxLayout(ReadPoems);
         verticalLayout->setObjectName("verticalLayout");
         label_title = new QLabel(ReadPoems);
@@ -52,7 +55,7 @@ public:
         font.setPointSize(16);
         font.setBold(true);
         label_title->setFont(font);
-        label_title->setAlignment(Qt::AlignCenter);
+        label_title->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         verticalLayout->addWidget(label_title);
 
@@ -69,6 +72,7 @@ public:
         comboBox_filter->addItem(QString());
         comboBox_filter->addItem(QString());
         comboBox_filter->setObjectName("comboBox_filter");
+        comboBox_filter->setStyleSheet(QString::fromUtf8("color:rgb(255, 255, 255)"));
 
         horizontalLayout->addWidget(comboBox_filter);
 
@@ -82,6 +86,9 @@ public:
         comboBox_category->addItem(QString());
         comboBox_category->setObjectName("comboBox_category");
         comboBox_category->setEnabled(false);
+        comboBox_category->setStyleSheet(QString::fromUtf8("\n"
+"color:rgb(255, 255, 255)\n"
+""));
 
         horizontalLayout->addWidget(comboBox_category);
 
@@ -99,6 +106,8 @@ public:
 
         listWidget_poems = new QListWidget(ReadPoems);
         listWidget_poems->setObjectName("listWidget_poems");
+        listWidget_poems->setStyleSheet(QString::fromUtf8("color:rgb(255, 255, 255);\n"
+"background-image: url(:/img/images/Country Birds Grayscale Coloring Book for Adults_.jpeg);"));
 
         verticalLayout->addWidget(listWidget_poems);
 

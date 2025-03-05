@@ -13,6 +13,12 @@
   <property name="windowTitle">
    <string>World of Poetry - View Poem</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">
+ color: rgb(0, 32, 63);
+
+background-image: url(:/img/images/read books.jpeg);</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="label_poemTitle">
@@ -26,7 +32,7 @@
       <string>Poem Title</string>
      </property>
      <property name="alignment">
-      <set>Qt::AlignCenter</set>
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
    </item>
@@ -48,7 +54,7 @@
      <item>
       <spacer name="horizontalSpacer_2">
        <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+        <enum>Qt::Orientation::Horizontal</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -81,6 +87,10 @@
    </item>
    <item>
     <widget class="QTextBrowser" name="textBrowser_poemContent">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(253, 253, 253);
+background-image: url(:/img/images/read books.jpeg);</string>
+     </property>
      <property name="readOnly">
       <bool>true</bool>
      </property>
@@ -91,7 +101,7 @@
      <item>
       <spacer name="horizontalSpacer">
        <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+        <enum>Qt::Orientation::Horizontal</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>

@@ -41,6 +41,10 @@ public:
         if (ViewPoem->objectName().isEmpty())
             ViewPoem->setObjectName("ViewPoem");
         ViewPoem->resize(600, 500);
+        ViewPoem->setStyleSheet(QString::fromUtf8("\n"
+" color: rgb(0, 32, 63);\n"
+"\n"
+"background-image: url(:/img/images/read books.jpeg);"));
         verticalLayout = new QVBoxLayout(ViewPoem);
         verticalLayout->setObjectName("verticalLayout");
         label_poemTitle = new QLabel(ViewPoem);
@@ -49,7 +53,7 @@ public:
         font.setPointSize(16);
         font.setBold(true);
         label_poemTitle->setFont(font);
-        label_poemTitle->setAlignment(Qt::AlignCenter);
+        label_poemTitle->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         verticalLayout->addWidget(label_poemTitle);
 
@@ -86,6 +90,8 @@ public:
 
         textBrowser_poemContent = new QTextBrowser(ViewPoem);
         textBrowser_poemContent->setObjectName("textBrowser_poemContent");
+        textBrowser_poemContent->setStyleSheet(QString::fromUtf8("background-color: rgb(253, 253, 253);\n"
+"background-image: url(:/img/images/read books.jpeg);"));
         textBrowser_poemContent->setReadOnly(true);
 
         verticalLayout->addWidget(textBrowser_poemContent);
